@@ -1,4 +1,4 @@
-<h1>MISP to Sentinel Integration</h1>
+<h1>SIEM Setup (MISP to Sentinel Integration)</h1>
 
 <h2>Brief Objective</h2>
 I implemented an SIEM solution on Microsoft Azure by integrating MISP with Azure Sentinel using the MISP2Sentinel data connector. The project focused on aggregating threat intelligence feeds, including indicators of compromise and related contextual data from MISP, to provide hands-on experience in how such systems function, what types of information they process, and how they support threat detection and incident response.
