@@ -46,7 +46,7 @@ To import the feeds into the MISP instance, I retrieved the complete JSON config
 <br />
 In Microsoft Sentinel, after setting up Sentinel, making sure to assign the resource group that contains all the resources in use, I navigated to the Content Hub under the Data Connectors subsection and installed the preconfigured data connector MISP2Sentinel. From the GitHub repository at https://github.com/cudeso/misp2sentinel, I followed the instructions provided for integrating MISP with Microsoft Sentinel using the Upload Indicators API methodology.  <br/>
 <br />
-Next, I went to the Azure portal's App Registrations section, created a new registration by naming it and clicking Register, leaving the default settings unchanged. After documenting the Client ID, Object ID, and Tenant ID, I proceeded to the Certificates & Secrets section where I created a new client secret. I made sure to document the value of the secret, as it would not be displayed again.  <br/>
+Next, I went to the Azure portal's App Registrations section, created a new registration by naming it, and clicked Register, leaving the default settings unchanged. After documenting the Client ID, Object ID, and Tenant ID, I proceeded to the Certificates & Secrets section where I created a new client secret. I made sure to document the value of the secret, as it would not be displayed again.  <br/>
 <br/>
 ![10](https://github.com/user-attachments/assets/110bce99-0d69-4f2b-ace5-887cbaa2b287) <br/>
 <br/>
