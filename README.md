@@ -20,7 +20,7 @@ I implemented an SIEM solution on Microsoft Azure by integrating MISP with Azure
 
 <h2>Steps</h2>
 
-In Azure, I provisioned a virtual machine using the Ubuntu Server 24.04 LTS image, leaving the remaining configurations set to their default values, with the resource group located in East US. Once the VM deployment was complete, I established an SSH connection to the instance via the Azure CLI. Upon accessing the Cloud Shell, I proceeded to configure the Docker Engine by following the installation instructions provided at https://docs.docker.com/engine/install/ubuntu/. After successfully installing the engine, I verified the installation by printing "hello-world" onto the CLI. <br/>
+In Azure, I provisioned a virtual machine using the Ubuntu Server 24.04 LTS image, leaving the remaining configurations set to their default values, with the resource group located in East US. Once the VM deployment was complete, I established an SSH connection to the instance via the Azure CLI. Upon accessing the Cloud Shell, I proceeded to configure the Docker Engine by following the installation instructions provided at https://docs.docker.com/engine/install/ubuntu/. After successfully installing the engine, I verified the installation by printing hello-world onto the CLI. <br/>
 <br/>
 ![1](https://github.com/user-attachments/assets/72f6a8f1-8362-4b21-b2cf-6f0011bc4bcd) <br/>
 <br/>
@@ -30,7 +30,7 @@ I navigated to the MISP image repository on GitHub and copied the URL: https://g
 <br/>
 ![3](https://github.com/user-attachments/assets/15ae7cb1-7be0-4929-9f43-6d7bf5246ba8) <br/>
 <br />
-To allow a connection from my physical operating system or any host, I modified the network settings of the Ubuntu VM and created an inbound port rule to open port 443. In the .env file, I specified the URL that I would use to access the MISP instance. After navigating to the URL, I proceeded through the "Connection is not private" warning and accessed the MISP instance. I then logged in using the default credentials provided in the GitHub repository. Once inside the MISP GUI, I accessed the admin profile and changed the password, as retaining default credentials on a publicly accessible server presents a significant security risk. <br/>
+To allow a connection from my physical operating system or any host, I modified the network settings of the Ubuntu VM and created an inbound port rule to open port 443. In the .env file, I specified the URL that I would use to access the MISP instance. After navigating to the URL, I proceeded through the Connection is not private warning and accessed the MISP instance. I then logged in using the default credentials provided in the GitHub repository. Once inside the MISP GUI, I accessed the admin profile and changed the password, as retaining default credentials on a publicly accessible server presents a significant security risk. <br/>
 <br/>
 ![4](https://github.com/user-attachments/assets/12cccab2-e4cc-4715-a6fe-e496e326a854) <br/>
 <br/>
